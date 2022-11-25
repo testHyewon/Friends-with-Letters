@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet" />
+    <title>Friends with Letters</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <a href="index.html">Friends with Letters</a>
+      </header>
+      <nav>
+        <ul class="navbar">
+          <li class="navbar-li"><a href="">Who we are</a></li>
+          <li class="navbar-li"><a href="">Where we are</a></li>
+          <li class="navbar-li"><a href="friends.html">Let's become friends</a></li>
+          <li class="navbar-li"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article class="article">Contact</article>
+        <section class="main">
+          <div class="main__left">
+            <!-- content -->
+            Udfyld formularboksen og send mig en besked, så vil du blive kontaktet af mig i løbet af kort tid.<br /><br />
+            Du kan også ringe til mobil +45 5364 1431 Svarer jeg ikke lige, så læg en besked eller send mig en SMS, så
+            vender jeg tilbage til dig. Vil du sende mig post til min tegnstue/studio er adressen: Arendalsgade 4.1 2100
+            København Ø
+          </div>
+          <div class="main__right">
+            <!-- form -->
+            <form class="form">
+              <div class="form__box">
+                <div class="form__label">Name</div>
+                <input type="text" class="form__input" placeholder="Name" name="name" id="name" />
+              </div>
+              <div class="form__box">
+                <div class="form__label">E-mail</div>
+                <input type="text" class="form__input" placeholder="E-mail" name="email" id="email" />
+              </div>
+              <div class="form__box">
+                <div class="form__label">Contents</div>
+                <textarea
+                  type="text"
+                  class="form__input form__textarea"
+                  placeholder="Contents"
+                  name="contents"
+                  id="contents"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="form__box">
+                <input type="button" value="SEND" class="form__button" id="submit" />
+              </div>
+            </form>
+            <script type="text/javascript">
+              // HTML 문서에서 'submit'이란 id의 element를 가져오고, click 했을 때 동작!
+              document.getElementById('submit').onclick = function () {
+                let email = 'gpffps369@gmail.com'; // variable
+                let name = document.getElementById('name').value;
+                let address = document.getElementById('email').value;
+                let contents = document.getElementById('contents').value;
+                // console.log(name, address, contents); // print
+                window.location = 'mailto:' + email + '?subject=' + name + '&cc=' + address + '&body=' + contents;
+                window.location.reload();
+              };
+            </script>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer>
+      <div class="footer__top">
+        <img src="assets/logo.png" class="footer__logo" />
+        <div class="footer__description">
+          Digital legeplads, journal/portfolio, der fortæller lidt om igangværende og tidligere projekter skabt af Søren
+          Bie. Via min blog deler jeg til tider lidt om hvert, mest om mit kreative virke, liv, tanker, minder,
+          billeder, impulser.
+        </div>
+        <a class="footer__contact" href="mailto:">
+          <img src="assets/icons/email.png" />
+          <text> Mail</text>
+        </a>
+      </div>
+      <div class="footer__bottom">© 2022. Maria Kim. all rights reserved.</div>
+    </footer>
+  </body>
+</html>

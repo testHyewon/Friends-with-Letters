@@ -1,0 +1,52 @@
+@import 'style.css';
+
+.main {
+  background-color: var(--grey-3);
+  display: flex;
+}
+
+.main__left {
+  width: 50%;
+  height: 555px;
+  padding: 65px 100px;
+}
+
+.main__left p {
+  padding-bottom: 30px;
+}
+
+.main__right {
+  width: 50%;
+  height: 555px;
+  padding: 30px 50px;
+}
+
+.form {
+}
+
+.form__box {
+  padding: 15px;
+}
+
+.form__label {
+  margin-bottom: 10px;
+}
+
+.form__input {
+  border: 3px solid var(--grey-2);
+  font-size: 18px;
+  padding: 12px;
+  width: 60%;
+}
+
+.form__textarea {
+  width: 80%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.form__button {
+  padding: 10px 40px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
